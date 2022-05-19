@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <h1>{{hour}}:{{min}}:{{sec}}:{{milsec}}</h1>
+    <table>
+      <tr><td>
+    <input type="button" (click)="start()" value="start"/></td>
+  <td><input type="button" (click)="lap()" value="tap"/></td>
+  <td> <input type="button" (click)="reset()" value="reset"/></td>
+  <td><input type="button" (click)="stopWatch()" value="stop"/></td>
+  </tr>
+  </table>
+  <tr>
+    <pm-lapdisp [lapDisparr]='laps'></pm-lapdisp>
+  </tr>
+  <table>
+
+  </table>
+
+  </body>
+</html>
